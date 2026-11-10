@@ -9,7 +9,7 @@ cfg.dims = [2];                    % dimensions d
 cfg.m_values = 50:5:60;            % numbers of anchors
 cfg.alpha_values = 0.1:0.05:0.2;   % outlier fractions
 cfg.n_trials = 5;                  % number of trials
-cfg.methods = {'SREDG','PREEEDM','RGNMR'};      % methods to run, to compare with PREEEDM, RGNMR; follow instructions in the readme.
+cfg.methods = {'SREDG'};           % methods to run, to compare with PREEEDM, RGNMR; follow instructions in the readme.
 cfg.workers = 0;                   % 0 = no parallelization, or the number of workers (e.g. 10)
 
 run_dir = run_phase_transition(cfg);
